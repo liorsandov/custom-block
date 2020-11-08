@@ -118,7 +118,22 @@ function paintMap() {
 		'&markers=' + address.split(' ').join('+') + '&key=' + mapsKey;
 // 	sdk.setContent('<a href="' + link + '"><img src="' + url + '" /></a>');
 	sdk.setContent('<div>test lior & kostia</div>')
-	sdk.setSuperContent('<div>test Super content</div>')
+	sdk.setSuperContent(
+		' 
+        <table width="500" border="0" cellpadding="0" cellspacing="0" align="center" bgcolor="#F05323">
+            <tr>
+                <td valign="middle" align="center" width="500" height="40" style="font-family: Arial, Verdana, Geneva, sans-serif; color: #ffffff; 
+        font-size: 18px; line-height: 20px; min-width:500px; background-color: #F05323;" bgcolor="#F05323">
+                    <a href="" rilt="" style="text-decoration: none; color: #ffffff; letter-spacing: 1px;">
+                        <strong>
+                            HOT DEAL ALERT — 2 DAYS ONLY
+                        </strong>
+                    </a>
+                </td>
+            </tr>
+        </table>
+        '
+		)
 	sdk.setData({
 		address: address,
 		width: width,
